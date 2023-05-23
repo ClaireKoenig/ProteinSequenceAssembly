@@ -86,5 +86,7 @@ Run lines 280 to 320 to generate the consensus sequences.
 Run lines 326 to 343 to generate and export the consensus sequences as FASTA files. 
 The outputs can be renamed line 335 for option 1, 339 for option 2 and 343 for option 3. Option 2 and 3 are selectively only exporting the Paranthropus sequences from the example dataset. The text string to extract can be changed lines 339 and 343 for option 2 and 3 respectively. 
 
+# Test data: 
 
+# Setting-up the MaxQuant search: 
 
