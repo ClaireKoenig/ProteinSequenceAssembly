@@ -97,8 +97,7 @@ MultiPeps[, .N, by = .(Gene)]
 # Combine the peptide sequences with unique gene mapping
 PepSeqs <- rbind(PepSeqs[Multiplicity == 1], MultiPeps[, !c("MaxPepCount", "PepCount")])
 #Export site table as csv
-fwrite(PepSeqs, paste0("CK", format(Sys.Date(), "%y%m%d"), "_",
-                       "PepSeqs", ".csv"))
+fwrite(PepSeqs, "PepSeqs.csv")
 }
 
 
@@ -156,8 +155,7 @@ ggplot(melt(DeltaOptPlotting[!is.na(Sample), ], measure.vars = c("Peptides", "Ev
   facet_grid(Identification~Sample, scales = "free") +
   theme_bw()
 
-ggsave(paste0("PR", format(Sys.Date(), "%y%m%d"), "_",
-              "Paranthropus_DeltaScore-Opt", ".pdf"),
+ggsave("Paranthropus_DeltaScore-Opt.pdf",
        width = 10, height = 8)
 
 
@@ -291,7 +289,7 @@ VarSites <- sites[Multiplicity > 1, .(Sample, GeneSite, RelCoverage, RelInt,
                           PSMcount, SiteCoverage, AA)][order(Sample, GeneSite, RelCoverage, RelInt, 
                                                                       PSMcount, SiteCoverage, AA)]
 # Export table
-fwrite(VarSites, "PR211126_VarSites.csv")
+fwrite(VarSites, "VarSites.csv")
 
 # Generate consensus table with the most commun variant
 consensus <- sites[RelCoverage == MaxCoverage]
