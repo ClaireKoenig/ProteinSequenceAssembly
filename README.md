@@ -1,6 +1,6 @@
 # ProteinSequenceAssembly
 
-This open-sourced sequence assembly pipeline enable site-based sequence reconstruction to generate consensus sequences directly from MaxQuant´s output tables. It provides faster, more reproducible, and transparent data analysis processes. 
+This open-sourced sequence assembly pipeline enable site-based sequence reconstruction to generate consensus sequences directly from MaxQuant´s output tables. It provides faster, more reproducible, and transparent data analysis processes. The pipeline was developed by Patrick L. Rüther.
 
 # Input
 1. MaxQuant´s txt folder (summary.txt, msms.txt, evidence.txt)
