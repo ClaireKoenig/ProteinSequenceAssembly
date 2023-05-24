@@ -86,7 +86,15 @@ Run lines 280 to 320 to generate the consensus sequences.
 Run lines 326 to 343 to generate and export the consensus sequences as FASTA files. 
 The outputs can be renamed line 335 for option 1, 339 for option 2 and 343 for option 3. Option 2 and 3 are selectively only exporting the Paranthropus sequences from the example dataset. The text string to extract can be changed lines 339 and 343 for option 2 and 3 respectively. 
 
-# Test data: 
+# Test data
 
-# Setting-up the MaxQuant search: 
+The test data used here represents the first successful mass spectrometric sequencing of enamel proteomes from four ca. 2 million years old dental specimens morphologically identified as P. robustus from the site of Swartkrans. The Paranthropus raw files were searched with the corresponding lab blanks, modern homo sapiens, gorilla and pongo reference files, as well as raw files corresponding to homo antecessor and gigantopithecus samples. 
+The raw files were searched on MaxQuant (V. 1.6.0.17). Unspecific digestion was selected. Cysteine trioxidation was set as a fixed modification, and Arg->Ornithine, Gln->pyro-Glu, Glu->pyro-Glu, Deamidation (NQ), Phospho (ST) and Oxidation (MPW) were set as variable modifications. The minimum peptide length was set at 6 amino acids for unspecific search and the maximum was set at 20 amino acids. The peptide mass was limited to 3500 Da. The minimum Andromeda score for both modified and unmodified peptides was fixed at 25. Protein, PSM and site FDR were set at 10% and were manually adjusted during the data analysis. The minimum delta score for modified and unmodified peptides was set at 0 and was manually adjusted afterwards. 
 
+# Setting up the search on MaxQuant
+
+1. Use a database without gaps (non-aligned).
+2. Set the protein, PSM and site FDR to 10%.
+3. Set the minimum delta score for modified and unmodified peptides to 0.
+4. Set the experiment names for each raw file.
+5. Set the fraction number for each raw file.
