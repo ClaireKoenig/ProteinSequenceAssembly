@@ -89,6 +89,7 @@ The outputs can be renamed line 335 for option 1, 339 for option 2 and 343 for o
 # Test data
 
 The test data used here represents the first successful mass spectrometric sequencing of enamel proteomes from four ca. 2 million years old dental specimens morphologically identified as P. robustus from the site of Swartkrans. The Paranthropus raw files were searched with the corresponding lab blanks, modern homo sapiens, gorilla and pongo reference files, as well as raw files corresponding to homo antecessor and gigantopithecus samples. 
+
 The raw files were searched on MaxQuant (V. 1.6.0.17). Unspecific digestion was selected. Cysteine trioxidation was set as a fixed modification, and Arg->Ornithine, Gln->pyro-Glu, Glu->pyro-Glu, Deamidation (NQ), Phospho (ST) and Oxidation (MPW) were set as variable modifications. The minimum peptide length was set at 6 amino acids for unspecific search and the maximum was set at 20 amino acids. The peptide mass was limited to 3500 Da. The minimum Andromeda score for both modified and unmodified peptides was fixed at 25. Protein, PSM and site FDR were set at 10% and were manually adjusted during the data analysis. The minimum delta score for modified and unmodified peptides was set at 0 and was manually adjusted afterwards. 
 
 # Setting up the search on MaxQuant
